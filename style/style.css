@@ -1,0 +1,46 @@
+
+html, body {
+    background-color: navy;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    color: cyan;
+}
+
+a:visited {
+    color: lime;
+}
+
+a:active {
+    color: blue;
+}
+
+h1>a,h1>a:active,
+h2>a,h2>a:active,
+h3>a,h3>a:active
+{ color: white; }
+
+#header {
+    height: 120px;
+}
+
+#header>object, #header>object>* {
+    width: 140px;
+    height: 88px;
+    margin-right: 15px;
+    float: left;
+}
+
+#main {
+    margin-left: 170px;
+    height: 500px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#footer {
+    text-align: left;
+    padding: 15px 0;
+}

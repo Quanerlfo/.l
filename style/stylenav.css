@@ -1,0 +1,22 @@
+#aside {
+    width: 140px;
+    height: 100%;
+    margin: 15px;
+    float: left;
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    left: 0;
+}
+
+#aside > * {
+    margin: 4px 0;
+    padding: 2px;
+}
+
+#aside > hr {
+    padding: 0 2px;
+}
+
+#aside p#opened { background-color: blue; }
+#aside p#opened a:active { color: navy; }
