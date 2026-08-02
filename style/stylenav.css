@@ -14,7 +14,7 @@
 #aside p#opened { background-color: blue; }
 #aside p#opened a:active { color: navy; }
 
-@media only screen and (min-width: 784px) {
+@media only screen and (min-width: 900px) {
     #aside {
         width: 140px;
         height: 100%;

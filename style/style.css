@@ -40,7 +40,7 @@ h3>a,h3>a:active
     vertical-align: middle;
 }
 
-@media only screen and (min-width: 784px) {
+@media only screen and (min-width: 900px) {
     #main { margin-left: 170px; }
 }
 
