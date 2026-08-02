@@ -24,6 +24,7 @@ h3>a,h3>a:active
 
 #header {
     height: 120px;
+    margin-top: 15px;
 }
 
 #header>object, #header>object>* {
