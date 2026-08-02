@@ -1,12 +1,5 @@
 #aside {
-    width: 140px;
-    height: 100%;
-    margin: 15px;
-    float: left;
-    text-align: left;
-    position: fixed;
-    top: 0px;
-    left: 0;
+    margin: 15px 0;
 }
 
 #aside > * {
@@ -20,3 +13,16 @@
 
 #aside p#opened { background-color: blue; }
 #aside p#opened a:active { color: navy; }
+
+@media only screen and (min-width: 784px) {
+    #aside {
+        width: 140px;
+        height: 100%;
+        margin: 15px;
+        float: left;
+        text-align: left;
+        position: fixed;
+        top: 0px;
+        left: 0;
+    }
+}
