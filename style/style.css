@@ -1,20 +1,32 @@
 
 html, body {
-    background-color: navy;
-    color: white;
-    font-size: 20px;
+	background-color: navy;
+	color: white;
+	font-size: 16px;
+	margin: 10px;
+}
+
+pre {
+	/*width: 500px;*/ /* specify width  */
+	white-space: pre-wrap; /* CSS3 browsers  */
+	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	white-space: -pre-wrap; /* Opera 4 thru 6 */
+	white-space: -o-pre-wrap; /* Opera 7 and up */
+	word-wrap: break-word; /* IE 5.5+ and up */
+	/* overflow-x: auto; */ /* Firefox 2 only */
+	/* width: 99%; */ /* only if needed */
 }
 
 a {
-    color: cyan;
+	color: cyan;
 }
 
 a:visited {
-    color: lime;
+	color: lime;
 }
 
 a:active {
-    color: blue;
+	color: teal;
 }
 
 h1>a,h1>a:active,
@@ -23,28 +35,41 @@ h3>a,h3>a:active
 { color: white; }
 
 #header {
-    height: 120px;
-    margin-top: 15px;
+	margin-top: 10px;
 }
 
-#header>object, #header>object>* {
-    width: 140px;
-    height: 88px;
-    margin-right: 15px;
-    float: left;
+#header>p {
+	margin: 15px 0;
 }
 
-#main {
-    height: 500px;
-    margin-right: 15px;
-    vertical-align: middle;
-}
-
-@media only screen and (min-width: 900px) {
-    #main { margin-left: 170px; }
+#header>object {
+	width: 120px;
+	height: 72px;
+	background-repeat: no-repeat;
+	margin-right: 10px;
 }
 
 #footer {
-    text-align: left;
-    padding: 15px 0;
+	text-align: left;
+	padding: 10px 0;
+}
+
+#footer>object {
+	width: 80px;
+	height: 80px;
+}
+
+@media only screen and (max-width: 699px) {
+	#header>object, #header>object>* { margin-bottom: 15px; }
+}
+
+@media only screen and (min-width: 700px) {
+	#header>object {
+		margin: 20px 5px; margin-left: 0;
+	}
+	#header>object>pre {
+	    font-size: 1px;
+	}
+	body { margin-left: 170px; }
+	#footer>object, #footer>object>* { float: left; }
 }

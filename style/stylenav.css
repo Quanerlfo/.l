@@ -1,28 +1,30 @@
 #aside {
-    margin: 15px 0;
+	position: relative;
+	margin: 10px 0;
 }
 
 #aside > * {
-    margin: 4px 0;
-    padding: 2px;
+	margin: 4px 0;
+	padding: 2px;
 }
 
 #aside > hr {
-    padding: 0 2px;
+	padding: 0 2px;
 }
 
-#aside p#opened { background-color: blue; }
+#aside p#opened { background-color: teal; }
 #aside p#opened a:active { color: navy; }
 
-@media only screen and (min-width: 900px) {
-    #aside {
-        width: 140px;
-        height: 100%;
-        margin: 15px;
-        float: left;
-        text-align: left;
-        position: fixed;
-        top: 0px;
-        left: 0;
-    }
+@media only screen and (min-width: 700px) {
+	#aside {
+		width: 132px;
+		height: 100%;
+		margin: 10px;
+		margin-right: 0;
+		float: left;
+		text-align: left;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
 }
