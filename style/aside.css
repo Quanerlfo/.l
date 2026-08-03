@@ -5,7 +5,7 @@
 #aside>ul>li {
 	margin: -4px 0;
 	margin-left: -40px;
-	padding: 0 20px;
+	padding: 0 10px;
 	list-style: none;
 }
 
@@ -17,14 +17,13 @@
 @media only screen and (min-width: 700px) {
 	#aside {
 		width: 192px;
-		margin: 15px 20px;
+		margin: 13px 20px;
 		margin-right: 0;
-		margin-top: 5px;
 		float: left;
 		text-align: left;
 		position: fixed;
 		top: 0;
 		left: 0;
 	}
-	#aside>ul>li { margin-bottom: -20px; margin-top: -7px; padding: 0; }
+	#aside>ul>li { margin-bottom: -7px; margin-top: -7px; padding: 0; }
 }
