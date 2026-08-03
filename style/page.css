@@ -1,0 +1,79 @@
+
+html, body {
+	background-color: navy;
+	color: white;
+	font-size: 24px;
+	margin: 10px;
+	word-wrap: break-word;
+}
+
+code, pre, tt, kbd, samp {
+	/*width: 500px;*/ /* specify width  */
+	white-space: pre-wrap; /* CSS3 browsers  */
+	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	white-space: -pre-wrap; /* Opera 4 thru 6 */
+	white-space: -o-pre-wrap; /* Opera 7 and up */
+	word-wrap: break-word; /* IE 5.5+ and up */
+	/* overflow-x: auto; */ /* Firefox 2 only */
+	/* width: 99%; */ /* only if needed */
+	font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	font-size: 12px;
+}
+
+a {
+	color: cyan;
+}
+
+a:visited {
+	color: lime;
+}
+
+a:active {
+	color: teal;
+}
+
+a.nota,a.nota:active,a.nota:visited
+{ color: white; }
+
+#header {
+	margin-top: 10px;
+}
+
+#header>p {
+	margin: 15px 0;
+}
+
+#header>object {
+	width: 140px;
+	height: 80px;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+
+#footer {
+	text-align: left;
+	padding: 10px 0;
+}
+
+#footer>object {
+	width: 120px;
+	height: 120px;
+	margin-bottom: 15px;
+}
+
+/*#footer>p#w3-valid>* { margin-left: 135px; }*/
+
+#footer>object>* { font-size: 12px; }
+
+@media only screen and (max-width: 699px) {
+	#header>object { margin-bottom: 15px; }
+}
+
+@media only screen and (min-width: 700px) {
+	#header>object {
+		margin: 20px 5px; margin-left: 0; margin-top: 0;
+	}
+	body { margin-left: 223px; }
+	#footer>object { margin-top: -56px; }
+	#footer>p#w3-valid { margin-left: 140px;}
+}
