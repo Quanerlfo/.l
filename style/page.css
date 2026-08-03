@@ -20,33 +20,18 @@ code, pre, tt, kbd, samp {
 	font-size: 12px;
 }
 
-a {
-	color: cyan;
-}
-
-a:visited {
-	color: lime;
-}
-
-a:active {
-	color: teal;
-}
-
+a { color: cyan; }
+a:visited { color: lime; }
+a:active { color: teal; }
 a.nota,a.nota:active,a.nota:visited
 { color: white; }
 
-#header {
-	margin-top: 10px;
-}
-
-#header>p {
-	margin: 15px 0;
-}
+#header { margin-top: 10px; }
+#header>p { margin: 15px 0; }
 
 #header>object {
 	width: 140px;
 	height: 80px;
-	background-repeat: no-repeat;
 	margin-right: 5px;
 }
 
@@ -61,8 +46,6 @@ a.nota,a.nota:active,a.nota:visited
 	margin-bottom: 15px;
 }
 
-/*#footer>p#w3-valid>* { margin-left: 135px; }*/
-
 #footer>object>* { font-size: 12px; }
 
 @media only screen and (max-width: 699px) {
@@ -71,7 +54,9 @@ a.nota,a.nota:active,a.nota:visited
 
 @media only screen and (min-width: 700px) {
 	#header>object {
-		margin: 20px 5px; margin-left: 0; margin-top: 0;
+		margin: 20px 5px;
+		margin-left: 0;
+		margin-top: 0;
 	}
 	body { margin-left: 223px; }
 	#footer>object { margin-top: -56px; }
