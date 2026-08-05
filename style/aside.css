@@ -2,22 +2,27 @@
 	position: relative;
 }
 
-#aside>ul>li {
+#aside>ul>*,
+#aside>ul>*>ul>*
+{ list-style: none; }
+
+#aside>ul>* {
 	margin: -4px 0;
 	margin-left: -40px;
 	padding: 0 10px;
-	list-style: none;
 }
+
+#aside>ul>*>ul>* { margin-left: -20px; }
 
 #aside > hr { padding: 0; }
 
-#aside p.opened { background-color: teal; }
-#aside p.opened a:active { color: navy; }
+#aside p.highlighted { background-color: teal; }
+#aside p.highlighted a:active { color: navy; }
 
 @media only screen and (min-width: 700px) {
 	#aside {
 		width: 192px;
-		margin: 13px 20px;
+		margin: 13px 9px;
 		margin-right: 0;
 		float: left;
 		text-align: left;

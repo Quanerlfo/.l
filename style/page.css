@@ -2,24 +2,25 @@
 html, body {
 	background-color: navy;
 	color: white;
-	font-size: 16px;
+	font-family: system, system-ui, sans-serif;
+	font-size: 14px;
 	word-wrap: break-word;
 }
 
-#main { margin: 0 15px; }
+hr { border-style: solid; border-bottom-style: none; border-color: cyan; }
+
+#main { padding: 0 15px; }
 
 code, pre, tt, kbd, samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	font-family: ui-monospace, system, system-ui, monospace;
 	font-size: 12px;
 }
 
 a { color: cyan; }
 a:visited { color: lime; }
 a:active { color: teal; }
-a.nota,a.nota:active,a.nota:visited
-{ color: white; }
 
 #header { margin-top: 20px; }
 #header>p { margin: 15px 0; }
@@ -35,15 +36,14 @@ a.nota,a.nota:active,a.nota:visited
 	padding: 10px 0;
 }
 
-#footer>p#w3-valid>a { margin: 5px; }
+*>p#w3-valid>a { padding: 10px; margin: 5px; margin-left: -10px; }
 
 #footer>object {
 	width: 120px;
 	height: 120px;
-	margin-bottom: 15px;
 }
 
-#footer>object>* { font-size: 12px; }
+*>object>* { font-size: 12px; padding: 0; margin: 0; }
 
 @media only screen and (max-width: 699px) {
 	#header>object { margin-bottom: 15px; }
@@ -55,7 +55,14 @@ a.nota,a.nota:active,a.nota:visited
 		margin-left: 0;
 		margin-top: 0;
 	}
-	#main { margin-left: 223px; }
-	#footer>object { margin-top: -56px; }
-	#footer>p#w3-valid { margin-left: 140px;}
+	*.hide-in-desktop {
+		position: absolute;
+		margin-left: -16384px;
+		margin-top: -16384px;
+	}
+	#main { margin-left: 203px; padding-left: 20px; border-left: 1px solid cyan; }
+	#footer>object,
+	#footer>object>*
+	{ margin-top: -88px; }
+	*>p#w3-valid>a { margin-left: 140px; margin-bottom: 15px; }
 }
