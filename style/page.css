@@ -1,30 +1,24 @@
 
-html, body {
+html,body {
 	background-color: navy;
 	color: white;
-	font-family: system, system-ui, sans-serif;
-	font-size: 14px;
 	word-wrap: break-word;
 }
-
-hr { border-style: solid; border-bottom-style: none; border-color: cyan; }
-
-#main { padding: 0 15px; }
-
-code, pre, tt, kbd, samp {
+hr { border: 1px solid cyan; border-bottom: 0; }
+code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', system, system-ui, monospace;
-	font-size: 12px;
 }
-
 a { color: cyan; }
 a:visited { color: lime; }
 a:active { color: teal; }
+*>p#w3-valid>a { padding: 10px; margin: 5px; margin-left: -10px; }
+*>object>* { font-size: 12px; padding: 0; margin: 0; }
 
-#header { margin-top: 20px; }
+#main { padding: 0 15px; }
+
+#header { padding-top: 20px; }
 #header>p { margin: 15px 0; }
-
 #header>object {
 	width: 140px;
 	height: 80px;
@@ -35,15 +29,10 @@ a:active { color: teal; }
 	text-align: left;
 	padding: 10px 0;
 }
-
-*>p#w3-valid>a { padding: 10px; margin: 5px; margin-left: -10px; }
-
 #footer>object {
 	width: 120px;
 	height: 120px;
 }
-
-*>object>* { font-size: 12px; padding: 0; margin: 0; }
 
 @media only screen and (max-width: 699px) {
 	#header>object { margin-bottom: 15px; }
@@ -55,14 +44,17 @@ a:active { color: teal; }
 		margin-left: 0;
 		margin-top: 0;
 	}
-	*.hide-in-desktop {
+	*.gui-pc-hidden {
 		position: absolute;
-		margin-left: -16384px;
-		margin-top: -16384px;
+		margin: -32768px 0 0 -32768px;
 	}
-	#main { margin-left: 203px; padding-left: 20px; border-left: 1px solid cyan; }
+	#main {
+		margin: 0 -5px 0 240px;
+		padding: 0 20px;
+		border-left: 1px solid cyan;
+	}
 	#footer>object,
 	#footer>object>*
 	{ margin-top: -88px; }
-	*>p#w3-valid>a { margin-left: 140px; margin-bottom: 15px; }
+	*>p#w3-valid>a { margin-left: 132px; margin-bottom: 15px; }
 }

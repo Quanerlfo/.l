@@ -1,0 +1,10 @@
+
+html, body {
+	font-family: system, system-ui, sans-serif;
+	font-size: 14px;
+}
+
+code,pre,tt,kbd,samp {
+	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', system, system-ui, monospace;
+	font-size: 12px;
+}
