@@ -14,7 +14,7 @@ hr { border-style: solid; border-bottom-style: none; border-color: cyan; }
 code, pre, tt, kbd, samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	font-family: ui-monospace, system, system-ui, monospace;
+	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', system, system-ui, monospace;
 	font-size: 12px;
 }
 
