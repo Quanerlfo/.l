@@ -1,12 +1,12 @@
 
 html, body {
-	font-family: system, system-ui, sans-serif;
+	font-family: ai-sans, system, system-ui, sans;
 	font-size: 14px;
 }
 
 code,pre,tt,kbd,samp {
 	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', system, system-ui, monospace;
-	font-size: 12.4px;
+	font-size: 12px;
 }
 
-*.ascart { font-size: 12px; }
+*.sli { font-size: 0; margin-right: 40px; }
