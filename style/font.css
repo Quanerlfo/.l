@@ -6,5 +6,7 @@ html, body {
 
 code,pre,tt,kbd,samp {
 	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', system, system-ui, monospace;
-	font-size: 12px;
+	font-size: 12.4px;
 }
+
+*.ascart { font-size: 12px; }
