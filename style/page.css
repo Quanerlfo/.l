@@ -16,9 +16,9 @@ a:active { color: teal; }
 *>p#w3-valid>a { padding: 10px; margin: 5px; margin-left: -10px; }
 *>object>* { font-size: 12px; padding: 0; margin: 0; }
 
-#main { padding: 0 15px; }
+#main { padding: 0 15px; margin: 0; }
 
-#header { padding-top: 20px; }
+#header { padding-top: 15px; }
 #header>p { margin: 15px 0; }
 #header>object {
 	width: 140px;
