@@ -16,7 +16,7 @@ p.hl>a:active { color: navy; }
 @media only screen and (min-width: 700px) {
 	#aside {
 		width: 208px;
-		padding: 14px 20px;
+		padding: 20px;
 		margin: 0;
 		float: left;
 		text-align: left;
