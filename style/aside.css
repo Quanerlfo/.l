@@ -15,18 +15,20 @@
 *.hl>a:active { color: navy; }
 
 @media only screen and (min-width: 700px) {
-	#aside {
-		width: 208px;
-		padding: 20px;
-		margin: -4px 0 0 0;
-		float: left;
-		text-align: left;
-		position: fixed;
-		top: 0;
-		left: 0;
-	}
-	#aside>ul>li {
-		margin: -7px 0 -7px -40px;
-		padding: 0;
+	@supports (position: fixed) {
+		#aside {
+			width: 208px;
+			padding: 20px;
+			margin: -4px 0 0 0;
+			float: left;
+			text-align: left;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		#aside>ul>li {
+			margin: -7px 0 -7px -40px;
+			padding: 0;
+		}
 	}
 }

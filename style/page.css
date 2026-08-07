@@ -24,6 +24,7 @@ a:active { color: teal; }
 #header>p { margin: 15px 0; }
 #header>object {
 	margin-right: 5px;
+	margin-bottom: 15px;
 }
 
 #footer {
@@ -38,24 +39,22 @@ a:active { color: teal; }
 #footer>object>*
 { margin-top: 0px; }
 
-@media only screen and (max-width: 699px) {
-	#header>object { margin-bottom: 15px; }
-}
-
 @media only screen and (min-width: 700px) {
+	@supports (position: fixed) {
+		*.gui-pc-hidden {
+			position: absolute;
+			margin: -32768px 0 0 -32768px;
+		}
+		#main {
+			margin: 0 -5px 0 240px;
+			padding: 0 20px;
+			border-left: 2px solid cyan;
+		}
+	}
 	#header>object {
 		margin: 15px 5px;
 		margin-left: 0;
 		margin-top: 0;
-	}
-	*.gui-pc-hidden {
-		position: absolute;
-		margin: -32768px 0 0 -32768px;
-	}
-	#main {
-		margin: 0 -5px 0 240px;
-		padding: 0 20px;
-		border-left: 2px solid cyan;
 	}
 	*>p#webmark { padding-left: 80px; }
 	#footer>object { margin-top: -49px; }
