@@ -8,8 +8,8 @@
 	padding: 0 8px;
 }
 #aside>ul>li>ul {
-    border-left: 2px solid teal;
-    margin-top: -6px;
+	border-left: 2px solid teal;
+	margin-top: -6px;
 }
 #aside>ul>li>ul>li { padding-right: 0; }
 #aside>hr { padding: 0; }
