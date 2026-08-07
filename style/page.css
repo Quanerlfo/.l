@@ -4,7 +4,7 @@ html,body {
 	color: white;
 	word-wrap: break-word;
 }
-hr { border: 1px solid cyan; border-bottom: 0; }
+hr { border: 1px solid cyan; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -44,7 +44,7 @@ a:active { color: teal; }
 
 @media only screen and (min-width: 700px) {
 	#header>object {
-		margin: 20px 5px;
+		margin: 15px 5px;
 		margin-left: 0;
 		margin-top: 0;
 	}
@@ -55,7 +55,7 @@ a:active { color: teal; }
 	#main {
 		margin: 0 -5px 0 240px;
 		padding: 0 20px;
-		border-left: 1px solid cyan;
+		border-left: 2px solid cyan;
 	}
 	*>p#webmark { padding-left: 80px; }
 	#footer>object { margin-top: -49px; }

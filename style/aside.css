@@ -8,15 +8,14 @@
 	padding: 0 8px;
 }
 #aside>ul>li>ul {
-    margin-top: -17px;
-    padding-top: 1px;
-    border-left: 1px solid cyan;
+    border-left: 2px solid teal;
+    margin-top: -6px;
 }
 #aside>ul>li>ul>li { padding-right: 0; }
 #aside>hr { padding: 0; }
 
-p.hl { background-color: teal; }
-p.hl>a:active { color: navy; }
+li.hl { background-color: teal; }
+li.hl>*>a:active { color: navy; }
 
 @media only screen and (min-width: 700px) {
 	#aside {
