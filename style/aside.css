@@ -14,8 +14,8 @@
 #aside>ul>li>ul>li { padding-right: 0; }
 #aside>hr { padding: 0; }
 
-li.hl { background-color: teal; }
-li.hl>*>a:active { color: navy; }
+*.hl { background-color: teal; }
+*.hl>a:active { color: navy; }
 
 @media only screen and (min-width: 700px) {
 	#aside {
