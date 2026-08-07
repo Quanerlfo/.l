@@ -7,6 +7,11 @@
 	margin-left: -40px;
 	padding: 0 8px;
 }
+#aside>ul>li>ul {
+    margin-top: -17px;
+    padding-top: 1px;
+    border-left: 1px solid cyan;
+}
 #aside>ul>li>ul>li { padding-right: 0; }
 #aside>hr { padding: 0; }
 
@@ -17,7 +22,7 @@ p.hl>a:active { color: navy; }
 	#aside {
 		width: 208px;
 		padding: 20px;
-		margin: 0;
+		margin: -4px 0 0 0;
 		float: left;
 		text-align: left;
 		position: fixed;
