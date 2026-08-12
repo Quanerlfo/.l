@@ -1,0 +1,40 @@
+
+html,body {
+	background-color: navy;
+	color: white;
+	word-wrap: break-word;
+}
+hr { border: 1px solid cyan; }
+code,pre,tt,kbd,samp {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	tab-size: 31px;
+}
+a { color: cyan; }
+a:visited { color: lime; }
+a:active { color: teal; }
+
+*>p#webmark { margin: 0; padding: 0; }
+*>p#webmark>* { padding: 0 15px 0 0; margin: 0; }
+*>object>* { font-size: 12px; padding: 0; margin: 0; }
+
+#main { padding: 0 15px; margin: 0; }
+
+#header { padding-top: 15px; }
+#header>p { margin: 15px 0; }
+#header>object {
+	margin-right: 5px;
+	margin-bottom: 15px;
+}
+
+#footer {
+	padding: 10px 0;
+	vertical-align: bottom;
+}
+#footer>object {
+	padding: 0;
+	margin: 0;
+}
+#footer>object,
+#footer>object>*
+{ margin-top: 0px; }
