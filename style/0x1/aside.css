@@ -1,0 +1,15 @@
+
+#aside { position: relative; }
+#aside>ul>li,
+#aside>ul>li>ul>li {
+	list-style: none;
+	margin: -5px 0;
+	margin-left: -40px;
+	padding: 0 8px;
+}
+#aside>ul>li>ul { border-left: 2px solid teal; }
+#aside>ul>li>ul>li { padding-right: 0; }
+#aside>hr { padding: 0; }
+
+*.hl { background-color: teal; }
+*.hl>a:active { color: navy; }
