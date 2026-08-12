@@ -1,0 +1,12 @@
+
+html, body {
+	font-family: ui-sans-serif, sans-serif;
+	font-size: 14px;
+}
+
+code,pre,tt,kbd,samp {
+	font-family: ui-monospace, Monaco, Consolas, Courier, 'Courier New', monospace;
+	font-size: 12px;
+}
+
+*.sli { font-size: 0; margin-right: 40px; }
