@@ -18,8 +18,8 @@
 	@supports (position: fixed) {
 		#aside {
 			width: 208px;
-			padding: 20px;
-			margin: -4px 0 0 0;
+			padding: 24px 20px;
+			margin: -10px 0 0 0;
 			float: left;
 			text-align: left;
 			position: fixed;

@@ -3,6 +3,8 @@ html,body {
 	background-color: navy;
 	color: white;
 	word-wrap: break-word;
+    padding: 0;
+    margin: 0;
 }
 hr { border: 1px solid cyan; }
 code,pre,tt,kbd,samp {
@@ -46,8 +48,9 @@ a:active { color: teal; }
 			margin: -32768px 0 0 -32768px;
 		}
 		#main {
-			margin: 0 0 0 220px;
-			padding: 0 20px;
+			margin: 0 0 0 250px;
+			padding: 6px 20px;
+            border-left: 2px solid cyan ;
 		}
 	}
 	#header>object {
