@@ -17,15 +17,15 @@ a:visited { color: lime; }
 a:active { color: teal; }
 dl.def-other-ch { padding-bottom: 15px; }
 
-*>p#webmark { margin: 0; padding: 0; }
-*>p#webmark>* { padding: 0 15px 0 0; margin: 0; }
-*>object>* { font-size: 12px; padding: 0; margin: 0; }
+* p#webmark { margin: 0; padding: 0; }
+* p#webmark * { padding: 0 5px 0 0; margin: 0; }
+* object * { font-size: 12px; padding: 0; margin: 0; }
 
-#main { padding: 0 15px; margin: 0; }
+#main { padding: 0 15px; margin: 0; width: 100%; }
 
 #header { padding-top: 15px; }
-#header>p { margin: 15px 0; }
-#header>object {
+#header p { margin: 15px 0; }
+#header object {
 	margin-right: 5px;
 	margin-bottom: 15px;
 }
@@ -34,13 +34,22 @@ dl.def-other-ch { padding-bottom: 15px; }
 	padding: 10px 0;
 	vertical-align: bottom;
 }
-#footer>object {
+#footer object {
 	padding: 0;
 	margin: 0;
 }
-#footer>object,
-#footer>object>*
+#footer object,
+#footer object *
 { margin-top: 0px; }
+
+@media only screen and (max-width: 699px) {
+	@supports (position: fixed) {
+		*.gui-mobile-hidden {
+			position: absolute;
+			margin: -32768px 0 0 -32768px;
+		}
+	}
+}
 
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
@@ -49,16 +58,15 @@ dl.def-other-ch { padding-bottom: 15px; }
 			margin: -32768px 0 0 -32768px;
 		}
 		#main {
-			margin: 0 0 0 250px;
-			padding: 6px 20px;
-            border-left: 2px solid cyan ;
+			margin: 0;
+			padding: 14px 20px 14px 250px;
 		}
 	}
-	#header>object {
+	#header object {
 		margin: 15px 5px;
 		margin-left: 0;
 		margin-top: 0;
 	}
-	*>p#webmark { padding-left: 80px; }
-	#footer>object { margin-top: -49px; }
+	* p#webmark.has-obj { padding-left: 80px; }
+	#footer object { margin-top: -49px; }
 }
