@@ -1,7 +1,6 @@
 
 #aside { position: relative; }
-#aside li,
-#aside li ul li {
+li.nomark {
 	list-style: none;
 	margin: -5px 0;
 	margin-left: -40px;
@@ -30,6 +29,3 @@
 		}
 	}
 }
-
-#aside li.nd,
-#aside li ul li.nd { margin: 0; }
