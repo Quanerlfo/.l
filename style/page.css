@@ -52,8 +52,9 @@ body { padding: 15px; margin: 0; }
 		}
 		body {
 			margin: 0;
-			padding: 14px 20px 14px 250px;
+			padding: 14px 20px;
 		}
+		body.has-nav { padding: 14px 20px 14px 250px; }
 	}
 	table tr td.logo-left { padding-right: 15px; }
 	* p#webmark.has-obj { padding-left: 80px; }

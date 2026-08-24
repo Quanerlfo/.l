@@ -7,6 +7,8 @@
 	margin-left: -40px;
 	padding: 0;
 }
+#aside li.nd,
+#aside li ul li.nd { margin: 0;}
 #aside { margin-bottom: 10px; }
 #aside li ul li { padding-left: 10px; }
 
