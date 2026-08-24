@@ -13,8 +13,11 @@ code,pre,tt,kbd,samp {
 	word-wrap: break-word;
 	tab-size: 31px;
 }
-a { color: cyan; }
-a:visited, a:link {
+a:link {
+	color: cyan;
+	text-decoration: none;
+}
+a:visited {
 	color: lime;
 	text-decoration: none;
 }
