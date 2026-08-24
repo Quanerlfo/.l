@@ -7,7 +7,11 @@ object.quarequin-logo { width: 112px; height: 68px; }
 object.sensorystar-icon { width: 64px; height: 64px; }
 table tr td.logo-left { padding-right: 10px; }
 
-#header { padding: 0; margin: 0; }
+#header {
+	padding: 0;
+	margin: 0;
+	padding-top: 15px;
+}
 #header p { margin: 15px 0; }
 #header object { margin-right: 5px; }
 
@@ -31,6 +35,7 @@ table tr td.logo-left { padding-right: 10px; }
 		}
 		body.has-nav { padding-left: 250px; }
 	}
+	#header { padding-top: 12px; }
 	table tr td.logo-left { padding-right: 15px; }
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
