@@ -11,7 +11,7 @@ li.nomark {
 #aside { margin-bottom: 10px; }
 #aside li ul li { padding-left: 10px; }
 
-*.hl { background-color: blue; }
+*.hl { background-color: teal; }
 
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
