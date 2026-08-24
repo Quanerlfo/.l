@@ -13,16 +13,12 @@ code,pre,tt,kbd,samp {
 	word-wrap: break-word;
 	tab-size: 31px;
 }
-a:link {
+a:link, a:visited {
 	color: cyan;
 	text-decoration: none;
 }
-a:visited {
-	color: lime;
-	text-decoration: none;
-}
 a:active, a:hover {
-	color: teal;
+	color: lime;
 	text-decoration: underline;
 }
 dl { padding-bottom: 15px; }
