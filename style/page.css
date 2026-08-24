@@ -14,8 +14,14 @@ code,pre,tt,kbd,samp {
 	tab-size: 31px;
 }
 a { color: cyan; }
-a:visited { color: lime; }
-a:active { color: teal; }
+a:visited, a:link {
+	color: lime;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: teal;
+	text-decoration: underline;
+}
 dl { padding-bottom: 15px; }
 dl dd { padding-bottom: 15px; }
 
