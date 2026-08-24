@@ -1,15 +1,14 @@
 
 #aside { position: relative; }
-#aside ul li,
-#aside ul li ul li {
+#aside li,
+#aside li ul li {
 	list-style: none;
 	margin: -5px 0;
 	margin-left: -40px;
-	padding: 0 16px;
+	padding: 0;
 }
-#aside ul li ul { border-left: 2px solid teal; }
-#aside ul li ul li { padding-right: 0; }
-#aside hr { padding: 0; }
+#aside { margin-bottom: 10px; }
+#aside li ul li { padding-left: 10px; }
 
 *.hl { background-color: teal; }
 *.hl a:active { color: navy; }
@@ -24,9 +23,9 @@
 			top: 0;
 			left: 0;
 		}
-		#aside ul li {
+		#aside li {
 			width: 208px;
-			margin: -7px 0 -7px -40px;
+			margin: -7px 0;
 			padding: 0;
 		}
 	}

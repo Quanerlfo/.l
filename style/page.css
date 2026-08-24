@@ -3,10 +3,10 @@ html,body {
 	background-color: navy;
 	color: white;
 	word-wrap: break-word;
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
-hr { border: 1px solid cyan; }
+hr { border-color: blue; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -16,6 +16,7 @@ a { color: cyan; }
 a:visited { color: lime; }
 a:active { color: teal; }
 dl.def-other-ch { padding-bottom: 15px; }
+dl.def-other-ch dd { padding-bottom: 15px; }
 
 * p#webmark { margin: 0; padding: 0; }
 * p#webmark * { padding: 0 5px 0 0; margin: 0; }
@@ -23,16 +24,13 @@ dl.def-other-ch { padding-bottom: 15px; }
 
 object.quarequin-logo { width: 112px; height: 68px; }
 object.sensorystar-icon { width: 64px; height: 64px; }
-table tr td.logo-left { padding-right: 15px; }
+table tr td.logo-left { padding-right: 10px; }
 
-#main { padding: 0 15px; margin: 0; width: 100%; }
+#main { padding: 15px; margin: 0; }
 
-#header { padding-top: 15px; }
+#header { padding: 0; margin: 0; }
 #header p { margin: 15px 0; }
-#header object {
-	margin-right: 5px;
-	margin-bottom: 15px;
-}
+#header object { margin-right: 5px; }
 
 #footer {
 	padding: 10px 0;
@@ -46,15 +44,6 @@ table tr td.logo-left { padding-right: 15px; }
 #footer object *
 { margin-top: 0px; }
 
-@media only screen and (max-width: 699px) {
-	@supports (position: fixed) {
-		*.gui-mobile-hidden {
-			position: absolute;
-			margin: -32768px 0 0 -32768px;
-		}
-	}
-}
-
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
 		*.gui-pc-hidden {
@@ -66,11 +55,7 @@ table tr td.logo-left { padding-right: 15px; }
 			padding: 14px 20px 14px 250px;
 		}
 	}
-	#header object {
-		margin: 15px 5px;
-		margin-left: 0;
-		margin-top: 0;
-	}
+	table tr td.logo-left { padding-right: 15px; }
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
 }
