@@ -1,6 +1,7 @@
 
-#main {
+body {
 	background-image: url("../pic/wsttl.gif");
-	background-repeat: repeat;
-	background-position: center 32px;
+	background-repeat: repeat-x;
+	 background-position: center 41px;
 }
+body.body-404 { background-position: center 36px; }
