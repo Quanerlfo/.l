@@ -2,10 +2,12 @@
 #aside { position: relative; }
 li.nomark {
 	list-style: none;
-	margin: -5px 0;
+	margin: 0;
 	margin-left: -40px;
 	padding: 0;
 }
+#aside li,
+#aside li ul li { margin-bottom: 5px; }
 #aside { margin-bottom: 10px; }
 #aside li ul li { padding-left: 10px; }
 
@@ -15,17 +17,14 @@ li.nomark {
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
 		#aside {
-			padding: 24px 20px;
+			padding: 31px 20px;
 			margin: -10px 0 0 0;
 			width: 208px;
 			position: fixed;
 			top: 0;
 			left: 0;
 		}
-		#aside li {
-			width: 208px;
-			margin: -7px 0;
-			padding: 0;
-		}
+		#aside li { width: 208px; }
+		#aside li.nomark { margin-left: 0; }
 	}
 }
