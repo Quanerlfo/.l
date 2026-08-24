@@ -6,7 +6,7 @@ html, body {
 }
 
 code,pre,tt,kbd,samp {
-	font-family: ui-monospace, monospace;
+	font-family: ui-monospace, Monaco, monospace;
 	font-size: 12px;
 }
 
