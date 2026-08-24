@@ -6,6 +6,7 @@ html,body {
 	padding: 0;
 	margin: 0;
 }
+body { padding: 15px; margin: 0; }
 hr { border-color: blue; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
@@ -25,8 +26,6 @@ dl dd { padding-bottom: 15px; }
 object.quarequin-logo { width: 112px; height: 68px; }
 object.sensorystar-icon { width: 64px; height: 64px; }
 table tr td.logo-left { padding-right: 10px; }
-
-body { padding: 15px; margin: 0; }
 
 #header { padding: 0; margin: 0; }
 #header p { margin: 15px 0; }
