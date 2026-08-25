@@ -3,10 +3,11 @@ html,body {
 	background-color: navy;
 	color: white;
 	word-wrap: break-word;
+	word-break: break-word;
 	padding: 0;
 	margin: 0;
 }
-body { padding: 0 15px; margin: 0; }
+body { padding: 15px; margin: 0; }
 hr { border-color: blue; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
@@ -25,8 +26,5 @@ dl { padding-bottom: 15px; }
 dl dd { padding-bottom: 15px; }
 
 @media only screen and (min-width: 700px) {
-    body {
-		margin: 0;
-		padding: 0 20px;
-    }
+    body {margin-top: -4px; }
 }

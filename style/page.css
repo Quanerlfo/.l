@@ -10,10 +10,10 @@ table tr td.logo-left { padding-right: 10px; }
 #header {
 	padding: 0;
 	margin: 0;
-	padding-top: 15px;
 }
-#header p { margin: 15px 0; }
-#header object { margin-right: 5px; }
+#header tr td object { margin: 2px 0; }
+#header tr td table tr td { padding: 0 2px; }
+#header tr td table tr td h1.single { margin: 0; }
 
 #footer {
 	padding: 10px 0;
@@ -35,7 +35,6 @@ table tr td.logo-left { padding-right: 10px; }
 		}
 		body.has-nav { padding-left: 250px; }
 	}
-	#header { padding-top: 12px; }
 	table tr td.logo-left { padding-right: 15px; }
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
