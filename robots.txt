@@ -1,8 +1,2 @@
 User-agent: *
 Disallow: /unused/
-
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
