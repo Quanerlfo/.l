@@ -2,7 +2,7 @@
 body {
 	background-image: url("../pic/wsttl.gif");
 	background-repeat: repeat-x;
-	background-position: center 33px;
+	background-position: center 34px;
 }
 
 body.i-404 { background-position: center 32px; }
