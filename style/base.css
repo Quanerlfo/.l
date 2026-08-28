@@ -1,26 +1,15 @@
 
 html,body {
-	background-color: navy;
-	color: white;
 	word-wrap: break-word;
 	word-break: break-word;
 	padding: 0;
 	margin: 0;
 }
 body { padding: 15px; margin: 0; }
-hr { border-color: blue; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
 	tab-size: 31px;
-}
-a:link, a:visited {
-	color: cyan;
-	text-decoration: none;
-}
-a:active, a:hover {
-	color: lime;
-	text-decoration: underline;
 }
 dl { padding-bottom: 15px; }
 dl dd { padding-bottom: 15px; }
@@ -32,6 +21,16 @@ dl dd { padding-bottom: 15px; }
 object.quarequin-logo { width: 112px; height: 68px; }
 object.sensorystar-icon { width: 64px; height: 64px; }
 
+li.nomark {
+	list-style: none;
+	margin: 0;
+	margin-left: -40px;
+	padding: 0;
+}
+
 @media only screen and (min-width: 700px) {
+	@supports (position: fixed) {
+		#aside li.nomark { margin-left: 0; }
+	}
     body { margin-top: -4px; }
 }

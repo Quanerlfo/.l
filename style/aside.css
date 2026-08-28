@@ -1,17 +1,9 @@
 
 #aside { position: relative; }
-li.nomark {
-	list-style: none;
-	margin: 0;
-	margin-left: -40px;
-	padding: 0;
-}
 #aside li,
 #aside li ul li { margin-bottom: 5px; }
 #aside { margin-bottom: 10px; }
 #aside li ul li { padding-left: 10px; }
-
-*.hl { background-color: teal; }
 
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
@@ -24,6 +16,5 @@ li.nomark {
 			left: 0;
 		}
 		#aside li { width: 208px; }
-		#aside li.nomark { margin-left: 0; }
 	}
 }
