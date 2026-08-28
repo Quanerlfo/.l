@@ -1,7 +1,7 @@
 
 html,body {
 	word-wrap: break-word;
-	word-break: break-word;
+	/*word-break: warp-word;*/
 	padding: 0;
 	margin: 0;
 }
