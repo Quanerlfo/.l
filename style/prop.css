@@ -9,3 +9,27 @@ code,pre,tt,kbd,samp {
 	font-size: 12px;
 }
 
+html,body {
+	background-color: navy;
+	color: white;
+}
+hr { border-color: blue; }
+a:link, a:visited {
+	color: cyan;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: lime;
+	text-decoration: underline;
+}
+*.hl { background-color: teal; }
+
+body {
+	background-image: url("../pic/wsttl.gif");
+	background-repeat: repeat-x;
+	background-position: center 34px;
+}
+
+body.i-404 { background-position: center 32px; }
+
+body.noheader { background-position: center 0; }

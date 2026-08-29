@@ -1,0 +1,148 @@
+/* style/aside.css */
+
+#aside { position: relative; }
+#aside li,
+#aside li ul li { margin-bottom: 5px; }
+#aside { margin-bottom: 10px; }
+#aside li ul li { padding-left: 10px; }
+
+@media only screen and (min-width: 700px) {
+	@supports (position: fixed) {
+		#aside {
+			padding: 30px 20px;
+			margin: -12px 0 0 0;
+			width: 208px;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		#aside li { width: 208px; }
+	}
+}
+
+/* end */
+/* style/base.css */
+
+html,body {
+	word-wrap: break-word;
+	/*word-break: warp-word;*/
+	padding: 0;
+	margin: 0;
+}
+body { padding: 15px; margin: 0; }
+code,pre,tt,kbd,samp {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	tab-size: 31px;
+}
+dl { padding-bottom: 15px; }
+dl dd { padding-bottom: 15px; }
+
+* p#webmark { margin: 0; padding: 0; }
+* p#webmark * { padding: 0 5px 0 0; margin: 0; }
+* object * { font-size: 12px; padding: 0; margin: 0; }
+
+object.quarequin-logo { width: 112px; height: 68px; }
+object.sensorystar-icon { width: 64px; height: 64px; }
+
+li.nomark {
+	list-style: none;
+	margin: 0;
+	margin-left: -40px;
+	padding: 0;
+    color: silver;
+}
+
+@media only screen and (min-width: 700px) {
+	@supports (position: fixed) {
+		#aside li.nomark { margin-left: 0; }
+	}
+    body { margin-top: -4px; }
+}
+
+/* end */
+/* style/prop.css */
+
+html, body {
+	font-family: ui-sans-serif, sans-serif;
+	font-size: 14px;
+}
+
+code,pre,tt,kbd,samp {
+	font-family: ui-monospace, Monaco, monospace;
+	font-size: 12px;
+}
+
+html,body {
+	background-color: navy;
+	color: white;
+}
+hr { border-color: blue; }
+a:link, a:visited {
+	color: cyan;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: lime;
+	text-decoration: underline;
+}
+*.hl { background-color: teal; }
+
+body {
+	/*background-image: url("../pic/wsttl.gif");*/
+	background-image: url("pic/wsttl.gif");
+	background-repeat: repeat-x;
+	background-position: center 34px;
+}
+
+body.i-404 { background-position: center 32px; }
+
+body.noheader { background-position: center 0; }
+
+/* end */
+/* style/page.css */
+
+#header,
+#header tr td
+{
+	padding: 0;
+	margin: 0;
+}
+#header { margin: -5px 0;}
+#header tr td object { margin: 6px 10px 6px 0; }
+#header tr td h1.single { margin: 0; }
+#header tr td.headef { padding-left: 5px; }
+
+#footer {
+	padding: 10px 0;
+}
+#footer object {
+	padding: 0;
+	margin: 0;
+}
+#footer object,
+#footer object *
+{ margin-top: 0px; }
+
+@media only screen and (max-width: 475px) {
+	#header tr td.headdef {
+		display: block;
+		padding: 2px 0 0 0;
+		margin-top: 70px;
+		margin-left: -123px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	@supports (position: fixed) {
+		*.gui-pc-hidden {
+			position: absolute;
+			margin: -32768px 0 0 -32768px;
+		}
+		body.has-nav { padding-left: 250px; }
+	}
+	* p#webmark.has-obj { padding-left: 80px; }
+	#footer object { margin-top: -49px; }
+}
+
+/* end */
