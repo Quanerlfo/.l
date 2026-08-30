@@ -69,7 +69,6 @@ li.nomark {
 }
 #header { margin: 0;}
 #header tr td object { margin: 6px 10px 6px 0; }
-#header tr td h1.single { margin: 0; }
 #header tr td.headef { padding-left: 5px; }
 
 #footer {
@@ -116,5 +115,12 @@ li.nomark {
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
 	html { align-items: center; }
-    body { margin-top: 0px; }
+	body { margin-top: 0px; }
+}
+
+*.no-ui {
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	margin: -32768px 0 0 -32768px;
 }
