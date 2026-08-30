@@ -3,8 +3,8 @@ html {
 	background-color: navy;
 	color: white;
 	background-image: url("pic/wsttl.gif");
-	background-repeat: repeat-y;
-	background-position: 0 0;
+	background-repeat: repeat;
+	background-position: center 0;
 }
 
 html,body {
@@ -94,11 +94,6 @@ li.nomark {
 
 @media only screen and (min-width: 700px) {
 	@supports (position: fixed) {
-		html.has-nav {
-			background-attachment: fixed;
-			background-repeat: repeat-y;
-			background-position: 165px 0;
-		}
 		body.has-nav {
 			margin-left: 230px;
 			background-position: 0 0;
