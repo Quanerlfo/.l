@@ -20,8 +20,14 @@ code,pre,tt,kbd,samp {
 	word-wrap: break-word;
 	tab-size: 31px;
 	font-family: ui-monospace, Monaco, monospace;
-	font-size: 12px;
+	font-size: 14px;
 }
+code.ascii-pic,
+pre.ascii-pic,
+tt.ascii-pic,
+kbd.ascii-pic,
+samp.ascii-pic
+{ font-size: 12px; }
 hr { border-color: blue; }
 ul li { color: white; }
 a:link, a:visited {
