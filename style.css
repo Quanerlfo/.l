@@ -15,7 +15,7 @@ html,body {
 	font-family: ui-sans-serif, sans-serif;
 	font-size: 14px;
 }
-body { padding: 12px 20px; margin: 0; }
+body { padding: 10px 20px; margin: 0; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -34,8 +34,8 @@ a:active, a:hover {
 	text-decoration: underline dotted;
 }
 *.hl { background-color: teal; }
-dl { padding-bottom: 15px; }
-dl dd { padding-bottom: 15px; }
+dl { margin-bottom: -5px; }
+dl dd { margin-bottom: 15px; }
 
 * p#webmark { margin: 0; padding: 0; }
 * p#webmark * { padding: 0 5px 0 0; margin: 0; }
@@ -68,23 +68,10 @@ li.nomark {
 	padding-left: 20px;
 }
 
-#header,
-#header tr td
-{
-	padding: 0;
-	margin: 0;
-}
-#header, #footer { margin: 0; padding: 0;}
+#header, #footer { margin: 0; padding: 0; }
 #header tr td object { margin: 6px 10px 6px 0; }
 #header tr td.headef { padding-left: 5px; }
 
-#footer {
-	padding: 10px 0;
-}
-#footer object {
-	padding: 0;
-	margin: 0;
-}
 #footer object,
 #footer object *
 { margin-top: 0px; }
