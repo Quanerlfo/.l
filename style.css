@@ -2,7 +2,7 @@
 html {
 	background-color: navy;
 	color: white;
-	background-image: url("pic/wstbgl.gif");
+	background-image: url("pic/wstbg.gif");
 	background-repeat: no-repeat;
 	background-position: center;
     background-attachment: fixed;
@@ -15,7 +15,10 @@ html,body {
 	font-family: ui-sans-serif, sans-serif;
 	font-size: 14px;
 }
-body { padding: 10px 20px; margin: 0; }
+body {
+    padding: 10px 20px;
+    margin: 0;
+}
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
