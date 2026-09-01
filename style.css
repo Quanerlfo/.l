@@ -2,9 +2,10 @@
 html {
 	background-color: navy;
 	color: white;
-	background-image: url("pic/wsttl.gif");
-	background-repeat: repeat;
-	background-position: center 0;
+	background-image: url("pic/wstbgl.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
 }
 
 html,body {
