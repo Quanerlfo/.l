@@ -118,26 +118,18 @@ li.nomark {
 			margin-left: -250px;
 			top: 0;
 		}
-		body.has-nav *.go-nav {
-			position: absolute;
-			padding: 0;
-			margin-left: -230px;
-			width: 210px;
-		}
-		body.has-nav *.hl-nav { background-color: teal; }
-		#nav li.nomark { margin-left: 0; }
-		#nav li ul { margin-left: 0px; }
-	}
-	@supports (position: fixed) {
-		body.has-nav #nav {
-			position: fixed;
-			margin-left: -250px;
-			top: 0;
+		body.has-nav #nav li.nomark { margin-left: 0; }
+		body.has-nav #nav li ul { margin-left: 0px; }
+		@supports (position: fixed) {
+			body.has-nav #nav {
+				position: fixed;
+				margin-left: -250px;
+				top: 0;
+			}
 		}
 	}
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
-	html { align-items: center; }
 	body { margin-top: 0px; }
 }
 
