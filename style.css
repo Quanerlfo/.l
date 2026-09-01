@@ -15,10 +15,7 @@ html,body {
 	font-family: ui-sans-serif, sans-serif;
 	font-size: 14px;
 }
-body {
-    padding: 10px 20px;
-    margin: 0;
-}
+body { padding: 12px 20px; margin: 0; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -26,12 +23,6 @@ code,pre,tt,kbd,samp {
 	font-family: ui-monospace, Monaco, monospace;
 	font-size: 14px;
 }
-code.ascii-pic,
-pre.ascii-pic,
-tt.ascii-pic,
-kbd.ascii-pic,
-samp.ascii-pic
-{ font-size: 12px; }
 hr { border-color: blue; }
 ul li { color: white; }
 a:link, a:visited {
@@ -52,6 +43,12 @@ dl dd { padding-bottom: 15px; }
 
 object.quarequin-logo { width: 112px; height: 68px; }
 object.sensorystar-icon { width: 64px; height: 64px; }
+code.ascii-pic,
+pre.ascii-pic,
+tt.ascii-pic,
+kbd.ascii-pic,
+samp.ascii-pic
+{ font-size: 12px; }
 
 li.nomark {
 	list-style: none;
@@ -77,7 +74,7 @@ li.nomark {
 	padding: 0;
 	margin: 0;
 }
-#header { margin: 0;}
+#header, #footer { margin: 0; padding: 0;}
 #header tr td object { margin: 6px 10px 6px 0; }
 #header tr td.headef { padding-left: 5px; }
 
@@ -104,25 +101,39 @@ li.nomark {
 }
 
 @media only screen and (min-width: 700px) {
-	@supports (position: fixed) {
+	@supports (top: 0) {
 		body.has-nav {
 			margin-left: 230px;
-			background-position: 0 0;
 		}
-		*.gui-pc-hidden {
+		body.has-nav *.desk-hidden {
 			position: absolute;
 			margin: -32768px 0 0 -32768px;
 		}
-		#nav li.nomark { margin-left: 0; }
-		#nav {
-			padding: 17px 20px;
-			margin: 0 0 0 0;
+		body.has-nav #nav {
+			padding: 20px;
+			margin: 0;
 			width: 210px;
-			position: fixed;
+			height: 300px;
+			position: absolute;
+			margin-left: -250px;
 			top: 0;
-			left: 0;
 		}
+		body.has-nav *.go-nav {
+			position: absolute;
+			padding: 0;
+			margin-left: -230px;
+			width: 210px;
+		}
+		body.has-nav *.hl-nav { background-color: teal; }
+		#nav li.nomark { margin-left: 0; }
 		#nav li ul { margin-left: 0px; }
+	}
+	@supports (position: fixed) {
+		body.has-nav #nav {
+			position: fixed;
+			margin-left: -250px;
+			top: 0;
+		}
 	}
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
