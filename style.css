@@ -92,6 +92,8 @@ li.nomark {
 #footer object *
 { margin-top: 0px; }
 
+@supports (image-rendering: pixelated) { html,body,img,object { image-rendering: pixelated; } }
+
 @media only screen and (max-width: 500px) {
 	#header tr td.headdef {
 		display: block;
