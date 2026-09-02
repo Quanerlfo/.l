@@ -23,6 +23,7 @@ code,pre,tt,kbd,samp {
 	font-family: ui-monospace, Monaco, monospace;
 	font-size: 14px;
 }
+html,body,img,object { image-rendering: crisp-edges; }
 hr { border-color: blue; }
 ul li { color: white; }
 a:link, a:visited {
