@@ -15,7 +15,7 @@ html,body {
 	font-family: ui-sans-serif, sans-serif;
 	font-size: 14px;
 }
-body { padding: 15pt 15pt; margin: 0; }
+body { padding: 15pt; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
