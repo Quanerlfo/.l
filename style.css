@@ -43,14 +43,14 @@ dl dd { margin-bottom: 15px; }
 * p#webmark * { padding: 0 5px 0 0; margin: 0; }
 * object * { font-size: 12px; padding: 0; margin: 0; }
 
-object.quarequin-logo { width: 112px; height: 68px; }
-object.sensorystar-icon { width: 64px; height: 64px; }
+object.w112-h168 { width: 112px; height: 68px; }
+object.w64-h64 { width: 64px; height: 64px; }
 code.ascii-pic,
 pre.ascii-pic,
 tt.ascii-pic,
 kbd.ascii-pic,
 samp.ascii-pic
-{ font-size: 12px; }
+{ font-size: 5pt }
 
 li.nomark {
 	list-style: none;
@@ -71,8 +71,8 @@ li.nomark {
 }
 
 #header, #footer { margin: 0; padding: 0; }
-#header tr td object { margin: 6px 10px 6px 0; }
-#header tr td.headef { padding-left: 5px; }
+#header tr td { margin: 0; }
+#header tr td object { margin: 5pt 5pt 0 0; line-height: 4pt; }
 
 #footer object,
 #footer object *
@@ -88,13 +88,15 @@ li.nomark {
 @supports (image-rendering: pixelated) { html,body,img,object { image-rendering: pixelated; } }
 
 @media only screen and (max-width: 500px) {
+	#header tr td.logo-left { vertical-align: top; }
 	#header tr td.headdef {
 		display: block;
-		padding: 2px 0 0 0;
-		margin-top: 70px;
-		margin-left: -123px;
-		margin-bottom: -15px;
+		float: left;
+		clear: both;
+		padding: 0;
+		margin-bottom: -15pt;
 	}
+	#header tr td.headdef.w112-h68 { margin-top: 45pt; margin-left: -89pt; }
 }
 
 @media only screen and (min-width: 600px) {
