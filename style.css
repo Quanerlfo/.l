@@ -15,7 +15,7 @@ html,body {
 	font-family: ui-sans-serif, sans-serif;
 	font-size: 14px;
 }
-body { padding: 10px 20px; margin: 0; }
+body { padding: 15pt 15pt; margin: 0; }
 code,pre,tt,kbd,samp {
 	white-space: pre-wrap;
 	word-wrap: break-word;
@@ -34,10 +34,11 @@ a:active, a:hover {
 	color: lime;
 	text-decoration: underline dotted;
 }
-*.hl { background-color: teal; }
 dl { margin-bottom: 0px; }
 dl dd { margin-bottom: 15px; }
 
+*.no-vmarg { margin-top: 0; margin-bottom: 0; }
+*.hl { background-color: teal; }
 * p#webmark { margin: 0; padding: 0; }
 * p#webmark * { padding: 0 5px 0 0; margin: 0; }
 * object * { font-size: 12px; padding: 0; margin: 0; }
@@ -77,6 +78,13 @@ li.nomark {
 #footer object *
 { margin-top: 0px; }
 
+*.no-ui {
+	font-size: 0px;
+	line-height: 0px;
+	position: absolute;
+	margin: -32768px 0 0 -32768px;
+}
+
 @supports (image-rendering: pixelated) { html,body,img,object { image-rendering: pixelated; } }
 
 @media only screen and (max-width: 500px) {
@@ -85,46 +93,46 @@ li.nomark {
 		padding: 2px 0 0 0;
 		margin-top: 70px;
 		margin-left: -123px;
+		margin-bottom: -15px;
 	}
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
 	@supports (top: 0) {
-		body.has-nav {
-			margin-left: 230px;
-		}
+		body.has-nav { margin-left: 120pt; }
 		body.has-nav *.desk-hidden {
 			position: absolute;
 			margin: -32768px 0 0 -32768px;
 		}
 		body.has-nav #nav {
-			padding: 20px;
-			margin: 0;
-			width: 210px;
-			height: 300px;
 			position: absolute;
 			top: 0;
-			margin-left: -250px;
-			padding-top: 17px;
+			padding: 15pt;
+			margin: 0;
+			width: 105pt;
+			height: 100%;
+			margin-left: -135pt;
+			padding-top: 15pt;
 		}
 		body.has-nav #nav li.nomark { margin-left: 0; }
 		body.has-nav #nav li ul { margin-left: 0px; }
-		@supports (position: fixed) {
-			body.has-nav #nav {
-				position: fixed;
-				margin-left: -250px;
-				top: 0;
-			}
-		}
+		@supports (position: fixed) { body.has-nav #nav { position: fixed; } }
 	}
 	* p#webmark.has-obj { padding-left: 80px; }
 	#footer object { margin-top: -49px; }
 	body { margin-top: 0px; }
 }
 
-*.no-ui {
-	font-size: 0px;
-	line-height: 0px;
-	position: absolute;
-	margin: -32768px 0 0 -32768px;
+@media only screen and (min-width: 650px) {
+	@supports (top: 0) {
+		body.has-nav { margin-left: 145pt; }
+		body.has-nav #nav { width: 130pt; margin-left: -160pt; }
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	@supports (top: 0) {
+		body.has-nav { margin-left: 170pt; }
+		body.has-nav #nav { width: 155pt; margin-left: -185pt; }
+	}
 }
